@@ -17,7 +17,7 @@ workflows:
                 - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS <-- Put your google-services.json)
                 - other
             vars:
-                PACKAGE_NAME: "YOUR_PACKAGE_NAME" # <-- Put your package name here e.g. com.domain.myapp
+                PACKAGE_NAME: "com.mytestapp" # <-- Put your package name here e.g. com.domain.myapp
             node: latest
         triggering:
             events:
@@ -57,7 +57,7 @@ workflows:
             # See the following link for details about email publishing - https://docs.codemagic.io/publishing-yaml/distribution/#email
             email:
                 recipients:
-                    - user_1@example.com
+                    - umam.tekno@gmail.com
                     - user_2@example.com
                 notify:
                   success: true     # To not receive a notification when a build succeeds
